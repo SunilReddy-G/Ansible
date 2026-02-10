@@ -1,0 +1,13 @@
+- name: "Sunilkumar Reddy"
+  dob: "1989-07-19
+  mobilenumebr: "7093318258"
+  adresses:
+  - flatnumber: 104
+    street: "gandi nagar"
+    city: "Hyderabad"
+    type: current
+
+  - flatnumber: 104
+    street: "gandi nagar"
+    city: "Hyderabad"
+    type: current

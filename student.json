@@ -1,0 +1,23 @@
+{
+    "First name": "sunilreddy",
+    "dob": "1989-07-19",
+    "address": [
+        {
+            "type": "Current",
+            "flatnumber": 204,
+            "Housename": "Sambasiva recidency",
+            "street": "Maheswaramma temple road",
+            "city": "Bangalore",
+            "State": "kARNATAKA"
+        }
+        {
+            "type": "Permanent",
+            "flatnumber": 1-1,
+            "street": "Nelaballi",
+            "village": "NR Palli",
+            "District": "Tirupathi",
+            "State": "Andhra Pradesh"
+        }
+    ],
+    "skills": ["java", "Devops", "Cloude"]
+}
