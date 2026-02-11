@@ -1,7 +1,7 @@
--name: variables from args
-hosts: local
-connection: local
-task:
+- name: variables from args
+  hosts: local
+  connection: local
+  task:
   - name: print variables from arg
     ansible.builtin.debug:
       msg: "Hi {{ NAME }}, Good Morning"
