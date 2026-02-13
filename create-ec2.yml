@@ -1,0 +1,28 @@
+- name: Launch EC2 Instance
+  hosts: local
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: Gather EC2 info
+      amazon.aws.ec2_instance_info:
+        filters:
+          instance-state-name: running
+      register: ec2_info
+
+    - name: Debug instances
+      debug:
+        var: ec2_info.instances
+
+    - name: Create t3.micro instance
+      amazon.aws.ec2_instance:
+        name: "devops-test"
+        key_name: "{{ your_key_name }}"  # e.g., from your EC2 history
+        instance_type: t3.micro
+        image_id: ami-0abcdef1234567890  # Amazon Linux 2023, us-east-1
+        wait: yes
+        vpc_subnet_id: subnet-01234567  # Your VPC subnet
+        assign_public_ip: yes
+        tags:
+          Environment: DevOps
+        region: us-east-1
+      register: ec2

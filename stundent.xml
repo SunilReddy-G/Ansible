@@ -18,6 +18,7 @@
             </CurentAddress>
         </Address>
     </Student1>
+    
     <Student2>
         <FirstName>Sunil</FirstName>
         <DOB>1989-01-01</DOB>
@@ -36,6 +37,6 @@
             </CurentAddress>
         </Address>
     </Student2>
-</Student>
+</StudentS>
 
     
