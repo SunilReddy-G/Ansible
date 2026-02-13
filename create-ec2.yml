@@ -1,7 +1,9 @@
 - name: Launch EC2 Instance
-  hosts: local
+  hosts: localhost
   connection: local
   become: yes
+  gather_facts: false
+  
   tasks:
     - name: Gather EC2 info
       amazon.aws.ec2_instance_info:
